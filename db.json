@@ -1,19 +1,52 @@
 {
-  "posts": [
+  "burgers": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Nyburgare",
+      "price": "129",
+      "image": "nyburgare.png"
+    },
+    {
+      "id": 2,
+      "name": "Äggmördaren",
+      "price": "172",
+      "image": "aggmordaren.png"
+    },
+    {
+      "id": 3,
+      "name": "HK-burgare",
+      "price": "69",
+      "image": "hkburgare.png"
+    },
+    {
+      "id": 4,
+      "name": "Snippburgare",
+      "price": "3",
+      "image": "snippburgare.png"
     }
   ],
-  "comments": [
+  "users": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "Christopher",
+      "password": "fisk"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "orders": [
+    {
+      "id": 1,
+      "buyer": "Christopher",
+      "time": 1,
+      "items": [
+        {
+          "name": "Nyburgare",
+          "quantity": "3"
+        },
+        {
+          "name": "Äggmördaren",
+          "quantity": "1"
+        }
+      ]
+    }
+  ]
 }

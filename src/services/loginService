@@ -1,0 +1,7 @@
+class loginService {
+    static loginAuthentication() {
+        console.log("Loggar in...")
+    }
+}
+
+export default loginService;

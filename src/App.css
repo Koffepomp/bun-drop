@@ -1,0 +1,28 @@
+button {
+    background-color: bisque;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: aqua;
+}
+
+.content-container {
+    background-color: coral;
+}
+
+.footer {
+    background-color: brown;
+}
