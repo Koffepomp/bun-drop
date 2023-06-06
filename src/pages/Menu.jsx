@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Burger from '../components/Burger'
 
 function Menu() {
@@ -13,16 +12,17 @@ function Menu() {
     })
 
     return ( 
-        <div>
-            <Link to="/home">
-            <button>Back</button>
-            </Link>
+        <div className="content-container">
             { burgers.map((burger) => (
-                <Burger key={burger.id} name={burger.name} image={burger.image}/>
+                <Burger
+                id={burger.id}
+                key={burger.id}
+                name={burger.name}
+                quantity = {1}
+                description={burger.description}
+                price={burger.price}
+                image={burger.image}/>
             ))}
-            <Link to="/cart">
-            <button>Cart</button>
-            </Link>
         </div>
      );
 }

@@ -3,24 +3,28 @@
     {
       "id": 1,
       "name": "Nyburgare",
+      "description": "Blandfärs för maximal njutning och förintelse.",
       "price": "129",
       "image": "nyburgare.png"
     },
     {
       "id": 2,
       "name": "Äggmördaren",
+      "description": "Som att poppa pnopcorn. Fast med ägg.",
       "price": "172",
       "image": "aggmordaren.png"
     },
     {
       "id": 3,
       "name": "HK-burgare",
+      "description": "Extra ost och utan lök!",
       "price": "69",
       "image": "hkburgare.png"
     },
     {
       "id": 4,
       "name": "Snippburgare",
+      "description": "Konflikt och tjaffs ingår. Ej värd det.",
       "price": "3",
       "image": "snippburgare.png"
     }

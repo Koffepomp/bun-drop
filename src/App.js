@@ -1,5 +1,6 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
+import Logo from './images/logo.png'
+import { Routes, Route, Link } from 'react-router-dom'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home'
@@ -11,8 +12,19 @@ import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <div>
-      <div className="navbar">Navbar</div>
+    <div className="all-content">
+      <div className="navbar">
+        <img className="logo-image" src={ Logo } />
+        <Link to="/home">
+        <button>Start</button>
+        </Link>
+        <Link to="/menu">
+        <button>Menu</button>
+        </Link>
+        <Link to="/cart">
+        <button>Cart</button>
+        </Link>
+      </div>
       <Routes>
 
       <Route path="/" element={<Login/>}/>
@@ -25,7 +37,7 @@ function App() {
       <Route path="*" element={<NotFound/>}/>
 
       </Routes>
-      <div className="footer">Footer</div>
+      <div className="footer">Copyright 2023 © Christopher Nordahl</div>
     </div>
   );
 }

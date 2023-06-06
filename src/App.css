@@ -6,9 +6,53 @@ button {
     border-radius: 25px 25px 25px 25px;
 }
 
-img {
-    height: 50px;
-    width: 50px;
+.plus-button {
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    transition: box-shadow 0.1s ease;
+}
+
+.plus-button:hover {
+    box-shadow: 0 0 10px 5px rgba(30, 255, 0, 0.5);
+}
+
+.cart-quantity {
+    height: 40px;
+    width: 40px;
+    transition: box-shadow 0.1s ease;
+}
+
+.cart-quantity-container {
+    background-color: #242329;
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-quantity-container p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
+}
+
+.burger-image {
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+}
+
+.burger-image-small {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
 }
 
 button:hover {
@@ -16,13 +60,80 @@ button:hover {
 }
 
 .navbar {
-    background-color: aqua;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .content-container {
-    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.cart-container {
+    background-color: #242329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content-container-burgers {
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    padding: 15px;
+    border: solid;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.content-container-cart {
+    margin: 20px;
+    width: 600px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.white-text {
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    border-style: dashed;
+    color: grey;
+    opacity: 0.5;
 }
 
 .footer {
-    background-color: brown;
+    height: 50px;
+    /* border-top: 1px solid #ccc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body {
+    background-color: #242329;
+    color: #FD9E7A;
+    margin: 0;
+  }
+
+.all-content {
+    width: 65%;
+    margin: auto;
 }
