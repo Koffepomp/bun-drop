@@ -10,5 +10,5 @@ Beställ hamburgare som blir levererade till dörren av en drönare.
 
 ### Länkar
 
-Figma: https://www.figma.com/file/Xh36rZuQzbMHjyWTM2DnlW/Bun-Drop-(GR%C3%84-Projektarbete)
-Github: https://github.com/Koffepomp/bun-drop
+- Figma: https://www.figma.com/file/Xh36rZuQzbMHjyWTM2DnlW/Bun-Drop-(GR%C3%84-Projektarbete)
+- Github: https://github.com/Koffepomp/bun-drop
