@@ -1,11 +1,11 @@
 import PlusButton from '../images/plus.png'
-import OrderManager from '../managers/OrderManager'
+import CartManager from '../managers/CartManager'
 
 function Burger(burger) {
 
     function ClickedOnPlus()
     {
-        OrderManager.AddToCart(burger)
+        CartManager.AddToCart(burger)
     }
 
     return ( 

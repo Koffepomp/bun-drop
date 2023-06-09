@@ -12,7 +12,7 @@ function Menu() {
     })
 
     return ( 
-        <div className="content-container">
+        <div className="menu-container">
             { burgers.map((burger) => (
                 <Burger
                 id={burger.id}

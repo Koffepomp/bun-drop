@@ -1,52 +1,63 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import OrderManager from '../managers/OrderManager'
+import CartManager from '../managers/CartManager'
 
 function Cart() {
 
-    const [cart, setCart] = useState(OrderManager.LoadCart())
+    const [cart, setCart] = useState(CartManager.LoadCart())
 
     async function HandleClick(e) {
 
         if (e.target.innerText === "+") {
-            await OrderManager.AddToCartFromId(e.target.id)
-            setCart(OrderManager.LoadCart())
+            await CartManager.AddToCartFromId(e.target.id)
+            setCart(CartManager.LoadCart())
         }
         else if (e.target.innerText === "-") {
-            await OrderManager.RemoveFromCartFromId(e.target.id)
-            setCart(OrderManager.LoadCart())
+            await CartManager.RemoveFromCartFromId(e.target.id)
+            setCart(CartManager.LoadCart())
         }
     }
 
-    return ( 
+    return (
         <div className="cart-container">
-            {console.log(cart)}
-            {cart.map(burger => (
-                <div key={burger.id}>
-                    <div className="content-container-cart">
+          {console.log(cart)}
+          {(() => {
+            if (cart.length === 0) {
+              return <h1>Your cart is empty!</h1>;
+            } else {
+              return (
+                <>
+                  {cart.map((burger) => (
+                    <div key={burger.id}>
+                      <div className="content-container-cart">
                         <img className="burger-image-small" src={require(`../images/${burger.image}`)}/>
                         <span>
-                            <h3 className="white-text">{burger.name}</h3>
-                            <p className="white-text">{burger.description}</p>
-                            <p className="white-text">{burger.price} kr</p>
+                          <h3 className="white-text">{burger.name}</h3>
+                          <p className="white-text">{burger.description}</p>
+                          <p className="white-text">{burger.price} kr</p>
                         </span>
                         <div className="cart-quantity-container">
-                                <button id={burger.id} onClick={HandleClick} className="cart-quantity">+</button>
-                                <p>{burger.quantity}</p>
-                                <button id={burger.id} onClick={HandleClick} className="cart-quantity">-</button>
+                          <button id={burger.id} onClick={HandleClick} className="cart-quantity">+</button>
+                          <p>{burger.quantity}</p>
+                          <button id={burger.id} onClick={HandleClick} className="cart-quantity">-</button>
                         </div>
+                      </div>
+                      <hr></hr>
                     </div>
-                    <hr></hr>
-                </div>
-            ))}
-            <span>
-                <h1>TOTAL COST: 500 kr</h1>
-            </span>
-            <Link to="/checkout">
-            <button>CHECKOUT</button>
-            </Link>
+                ))}
+                <span>
+                    <h1>TOTAL COST:{" "}
+                    {cart.reduce((total, burger) => total + burger.price * burger.quantity, 0)}{" "}kr</h1>
+                </span>
+                    <Link to="/checkout">
+                    <button>CHECKOUT</button>
+                    </Link>
+                </>
+              );
+            }
+          })()}
         </div>
-     );
+      );
 }
 
 export default Cart;

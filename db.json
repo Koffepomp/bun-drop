@@ -3,28 +3,28 @@
     {
       "id": 1,
       "name": "Nyburgare",
-      "description": "Blandfärs för maximal njutning och förintelse.",
+      "description": "Blandfärs för maximal njutning och förintelse. Nu med smak av umami!",
       "price": "129",
       "image": "nyburgare.png"
     },
     {
       "id": 2,
       "name": "Äggmördaren",
-      "description": "Som att poppa pnopcorn. Fast med ägg.",
+      "description": "Som att poppa pnopcorn. Fast med ägg. Nyhet direkt från Skelefteå!",
       "price": "172",
       "image": "aggmordaren.png"
     },
     {
       "id": 3,
       "name": "HK-burgare",
-      "description": "Extra ost och utan lök!",
+      "description": "Extra lök och utan ost! När suget sätter in så smeker den tarmarna på vägen ut.",
       "price": "69",
       "image": "hkburgare.png"
     },
     {
       "id": 4,
       "name": "Snippburgare",
-      "description": "Konflikt och tjaffs ingår. Ej värd det.",
+      "description": "Konflikt och tjaffs ingår. Ej värt det. Om man inte äger en NKSVT handske!",
       "price": "3",
       "image": "snippburgare.png"
     }
@@ -51,6 +51,59 @@
           "quantity": "1"
         }
       ]
+    },
+    {
+      "buyer": "Ragnar",
+      "time": 1,
+      "items": [
+        {
+          "id": 3,
+          "name": "HK-burgare",
+          "quantity": 3,
+          "description": "Extra lök och utan ost! När suget sätter in så smeker den tarmarna på vägen ut.",
+          "price": "69",
+          "image": "hkburgare.png"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "buyer": "Ragnar",
+      "time": 1,
+      "items": [
+        {
+          "id": 4,
+          "name": "Snippburgare",
+          "quantity": 1,
+          "description": "Konflikt och tjaffs ingår. Ej värt det. Om man inte äger en NKSVT handske!",
+          "price": "3",
+          "image": "snippburgare.png"
+        },
+        {
+          "id": 1,
+          "name": "Nyburgare",
+          "quantity": 1,
+          "description": "Blandfärs för maximal njutning och förintelse. Nu med smak av umami!",
+          "price": "129",
+          "image": "nyburgare.png"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "buyer": "Ragnar",
+      "time": 1,
+      "items": [
+        {
+          "id": 2,
+          "name": "Äggmördaren",
+          "quantity": 1,
+          "description": "Som att poppa pnopcorn. Fast med ägg. Nyhet direkt från Skelefteå!",
+          "price": "172",
+          "image": "aggmordaren.png"
+        }
+      ],
+      "id": 4
     }
   ]
 }

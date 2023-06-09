@@ -71,6 +71,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -136,4 +144,65 @@ html, body {
 .all-content {
     width: 65%;
     margin: auto;
+}
+
+.checkout-container {
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+  
+.checkout-container h1 {
+    margin-bottom: 20px;
+}
+  
+.checkout-container img {
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+  
+.checkout-container input[type="radio"] {
+    margin-right: 5px;
+}
+  
+.checkout-container input[type="text"] {
+    width: 200px;
+    display: flex;
+    align-self: flex-end;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.checkout-container button {
+    padding: 10px 20px;
+    background-color: #FD9E7A;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+  
+.checkout-container button:hover {
+    background-color: #e16200;
+}
+
+.checkout-payment-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #ffffff;
+    width: 250px;
+    height: 60px;
+    border: solid;
+    border-radius: 25px 25px 25px 25px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.checkout-payment-container:hover {
+    background-color: #ffcbae;
 }

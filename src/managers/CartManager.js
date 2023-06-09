@@ -1,4 +1,4 @@
-class OrderManager {
+class CartManager {
 
     static EmptyCart() {
         let cart = []
@@ -80,18 +80,20 @@ class OrderManager {
         return false;
     }
 
-    static CalculateTotalAmount() {
-
+    static getOrder() {
+        let order = localStorage.getItem("cartItems")
+        order = JSON.parse(order)
+        return order;
     }
 
-
-
-
-
-
-
-
-
+    static saveOrder(orderData)
+    {
+        fetch('http://localhost:7000/orders', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(orderData)
+        })
+    }
 }
 
-export default OrderManager
+export default CartManager
