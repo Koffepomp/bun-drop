@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 function Login() {
     return ( 
-        <div>
+        <div className="menu-container">
             <Link to="/home">
             <button>Login</button>
             </Link>

@@ -27,6 +27,34 @@
       "description": "Konflikt och tjaffs ingår. Ej värt det. Om man inte äger en NKSVT handske!",
       "price": "3",
       "image": "snippburgare.png"
+    },
+    {
+      "id": 5,
+      "name": "Chefburgare",
+      "description": "Vem är chef utav burgarna? Extra allt och gratis dricka!",
+      "price": "6900",
+      "image": "chefburgare.png"
+    },
+    {
+      "id": 6,
+      "name": "Vildburgare",
+      "description": "Jag hörde du var en vild en. Älgkött, gurka och våld.",
+      "price": "175",
+      "image": "vildburgare.png"
+    },
+    {
+      "id": 7,
+      "name": "Rostiburgare",
+      "description": "Burgare utan en själ. Du kan dra åt helvete och hämta glass.",
+      "price": "312",
+      "image": "rostiburgare.png"
+    },
+    {
+      "id": 8,
+      "name": "Gretaburgare",
+      "description": "Lika miljövänlig som ett kärnkraftverk. Ungefär lika toxic också.",
+      "price": "123",
+      "image": "gretaburgare.png"
     }
   ],
   "users": [
@@ -53,23 +81,59 @@
       ]
     },
     {
-      "buyer": "Ragnar",
-      "time": 1,
+      "buyer": "Albin",
       "items": [
+        {
+          "id": 1,
+          "name": "Nyburgare",
+          "quantity": 2,
+          "description": "Blandfärs för maximal njutning och förintelse. Nu med smak av umami!",
+          "price": "129",
+          "image": "nyburgare.png"
+        },
         {
           "id": 3,
           "name": "HK-burgare",
-          "quantity": 3,
+          "quantity": 1,
           "description": "Extra lök och utan ost! När suget sätter in så smeker den tarmarna på vägen ut.",
           "price": "69",
           "image": "hkburgare.png"
+        },
+        {
+          "id": 4,
+          "name": "Snippburgare",
+          "quantity": 1,
+          "description": "Konflikt och tjaffs ingår. Ej värt det. Om man inte äger en NKSVT handske!",
+          "price": "3",
+          "image": "snippburgare.png"
+        },
+        {
+          "id": 2,
+          "name": "Äggmördaren",
+          "quantity": 1,
+          "description": "Som att poppa pnopcorn. Fast med ägg. Nyhet direkt från Skelefteå!",
+          "price": "172",
+          "image": "aggmordaren.png"
         }
       ],
       "id": 2
     },
     {
-      "buyer": "Ragnar",
-      "time": 1,
+      "buyer": "Albin",
+      "items": [
+        {
+          "id": 2,
+          "name": "Äggmördaren",
+          "quantity": 20,
+          "description": "Som att poppa pnopcorn. Fast med ägg. Nyhet direkt från Skelefteå!",
+          "price": "172",
+          "image": "aggmordaren.png"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "buyer": "Albin",
       "items": [
         {
           "id": 4,
@@ -80,20 +144,13 @@
           "image": "snippburgare.png"
         },
         {
-          "id": 1,
-          "name": "Nyburgare",
+          "id": 6,
+          "name": "Vildburgare",
           "quantity": 1,
-          "description": "Blandfärs för maximal njutning och förintelse. Nu med smak av umami!",
-          "price": "129",
-          "image": "nyburgare.png"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "buyer": "Ragnar",
-      "time": 1,
-      "items": [
+          "description": "Jag hörde du var en vild en. Älgkött, gurka och våld.",
+          "price": "175",
+          "image": "vildburgare.png"
+        },
         {
           "id": 2,
           "name": "Äggmördaren",

@@ -5,7 +5,7 @@ import NewestBurger from '../images/snippburgare.png'
 function Home() {
     return ( 
     <div className="content-container">
-        <h1>Welcome, Christopher!</h1>
+        <h1 className="welcome-text">Welcome, Christopher!</h1>
         <p>What would you like to eat today?</p>
        
         <div className="content-container-burgers">

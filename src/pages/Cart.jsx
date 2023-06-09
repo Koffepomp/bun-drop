@@ -37,9 +37,9 @@ function Cart() {
                           <p className="white-text">{burger.price} kr</p>
                         </span>
                         <div className="cart-quantity-container">
-                          <button id={burger.id} onClick={HandleClick} className="cart-quantity">+</button>
+                          <button id={burger.id} onClick={HandleClick} className="cart-quantity increase">+</button>
                           <p>{burger.quantity}</p>
-                          <button id={burger.id} onClick={HandleClick} className="cart-quantity">-</button>
+                          <button id={burger.id} onClick={HandleClick} className="cart-quantity decrease">-</button>
                         </div>
                       </div>
                       <hr></hr>

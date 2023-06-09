@@ -16,13 +16,16 @@ function App() {
       <div className="navbar">
         <img className="logo-image" src={ Logo } />
         <Link to="/home">
-        <button>Start</button>
+        <button className="navbar-button">START</button>
         </Link>
         <Link to="/menu">
-        <button>Menu</button>
+        <button className="navbar-button">MENU</button>
         </Link>
         <Link to="/cart">
-        <button>Cart</button>
+        <button className="navbar-button">CART</button>
+        </Link>
+        <Link to="/login">
+        <button className="navbar-button">LOGOUT</button>
         </Link>
       </div>
       <Routes>
